@@ -9,7 +9,7 @@ const BoxSection = () => {
   const width = useWindowSize();
 
   return (
-    <section className={styles.section}>
+    <section id='nosotros' className={styles.section}>
       <div className={styles.section__container}>
         <div className={styles.section__container_logo}>
           <Image
