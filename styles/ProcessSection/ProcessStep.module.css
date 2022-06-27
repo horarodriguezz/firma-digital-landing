@@ -1,4 +1,5 @@
-.step {
+.step,
+.step--reverse {
   width: 100%;
   display: flex;
   align-items: center;
@@ -25,60 +26,124 @@
 }
 
 @media (min-width: 768px) {
-  .step {
-    width: 45%;
-    flex-direction: column;
-    align-items: center;
+  .step,
+  .step--reverse {
+    width: 65%;
+    position: absolute;
     margin: 0;
+    z-index: 50;
+  }
+
+  .step--reverse {
+    flex-direction: row-reverse;
   }
 
   .step__icon {
-    width: 40%;
-    height: 150px;
+    width: 25%;
+    height: 75px;
   }
 
   .step__textcontainer {
-    width: 100%;
+    width: 75%;
     padding: 0;
+    margin-left: 4rem;
+  }
+
+  .step--reverse p {
+    margin-right: 4rem;
+    text-align: end;
   }
 
   .step__textcontainer_text {
-    text-align: center;
-    width: 85%;
-    margin: 0 auto;
     font-size: 1.3rem;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
+    width: fit-content;
+  }
+
+  #step1 {
+    top: 11%;
+    left: 27%;
+  }
+
+  #step2 {
+    right: 27%;
+    top: 28.5%;
+  }
+
+  #step3 {
+    top: 46%;
+    left: 27%;
+  }
+
+  #step4 {
+    top: 63.5%;
+    right: 27%;
+  }
+
+  #step5 {
+    top: 81%;
+    left: 27%;
   }
 }
 
 @media (min-width: 1280px) {
-  .step {
-    width: 28%;
-    margin-left: 2rem;
-    flex-direction: row;
+  .step,
+  .step--reverse {
+    width: 40%;
   }
 
   .step__icon {
-    height: 200px;
-    width: 30%;
+    width: 20%;
+    height: 60px;
   }
 
   .step__textcontainer {
-    width: 70%;
-    padding-left: 1rem;
+    width: 60%;
+    margin-left: 3.5rem;
   }
 
   .step__textcontainer_text {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.25rem;
-    text-align: start;
-    width: 90%;
+  }
+
+  .step--reverse p {
+    margin-right: 3.5rem;
+  }
+
+  #step1 {
+    left: 39%;
+  }
+
+  #step2 {
+    right: 39%;
+  }
+
+  #step3 {
+    left: 39%;
+  }
+
+  #step4 {
+    right: 39%;
+  }
+
+  #step5 {
+    left: 39%;
   }
 }
 
 @media (min-width: 1536px) {
   .step__icon {
-    height: 270px;
+    height: 75px;
+  }
+
+  .step__textcontainer {
+    width: 60%;
+    margin-left: 4rem;
+  }
+
+  .step--reverse p {
+    margin-right: 4rem;
   }
 
   .step__textcontainer_text {

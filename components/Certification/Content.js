@@ -1,4 +1,4 @@
-import styles from "styles/Services/ServicesSection.module.css";
+import styles from "styles/Certification/Certification.module.css";
 
 const Content = () => {
   return (

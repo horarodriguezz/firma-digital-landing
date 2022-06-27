@@ -1,8 +1,11 @@
+import Send from "components/icons/Send";
+
+import { useRef } from "react";
+import { useParentDimensions } from "hooks/useParentDimensions";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { object, string } from "yup";
 import styles from "styles/FormSection/Form.module.css";
-import Image from "next/image";
 
 const Form = ({ setStatus }) => {
   const schema = object().shape({
@@ -53,6 +56,9 @@ const Form = ({ setStatus }) => {
     }
   };
 
+  const ref = useRef();
+  const dimensions = useParentDimensions(ref);
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       <input
@@ -101,15 +107,8 @@ const Form = ({ setStatus }) => {
       )}
       <button className={styles.form__submitbtn}>
         <span>Enviar</span>
-        <div className={styles.form__submitbtn_icon}>
-          <Image
-            src='/assets/icons/icon material-send.svg'
-            alt=''
-            layout='fill'
-            sizes='5vw'
-            objectFit='contain'
-            objectPosition='center'
-          />
+        <div ref={ref} className={styles.form__submitbtn_icon}>
+          <Send widht={dimensions.width} height={dimensions.height} />
         </div>
       </button>
     </form>

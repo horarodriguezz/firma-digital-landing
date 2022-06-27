@@ -1,6 +1,6 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "styles/Services/ServicesSection.module.css";
+import styles from "styles/Certification/Certification.module.css";
 
 const CertificationLink = ({ className }) => {
   return (

@@ -1,5 +1,5 @@
 .imagecontainer {
-  width: 100%;
+  width: 85%;
   height: 300px;
   position: relative;
 }
@@ -21,7 +21,7 @@
 @media (min-width: 1280px) {
   .imagecontainer {
     height: calc(100vh - 5rem);
-    width: 60%;
+    width: 50%;
   }
 
   .imagecontainer img {

@@ -21,10 +21,6 @@ const Contact = () => {
         <FontAwesomeIcon icon={faEnvelope} />
         <span>comercial@boxcustodia.com</span>
       </div>
-      <a href='#' className={styles.contact__link}>
-        Ponerse en contacto con comercial{" "}
-        <FontAwesomeIcon icon={faArrowRight} />
-      </a>
     </div>
   );
 };

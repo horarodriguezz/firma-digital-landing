@@ -1,12 +1,15 @@
 .process {
-  padding-top: 5rem;
   width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background-color: #f4f6fa;
+  position: relative;
 }
 
 .process__container {
   width: 85%;
   margin: 2rem auto 0 auto;
-  position: relative;
+  height: 100%;
 }
 
 .process__container_title {
@@ -25,6 +28,10 @@
 }
 
 @media (min-width: 768px) {
+  .process__container {
+    width: 100%;
+  }
+
   .process__container_title {
     font-size: 2.25rem;
     line-height: 2.75rem;
@@ -36,14 +43,22 @@
   .process__container_steps {
     position: relative;
     z-index: 100;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 75vh;
   }
 }
 
 @media (min-width: 1280px) {
+  .process {
+    padding-top: 5rem;
+    height: fit-content;
+  }
+
+  .process_container {
+    width: 85%;
+  }
+
   .process__container_title {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -52,18 +67,24 @@
   }
 
   .process__container_steps {
-    height: fit-content;
+    height: 100vh;
   }
 }
 
 @media (min-width: 1536px) {
   .process {
-    padding-top: 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .process__container_steps {
+    height: 80vh;
   }
 
   .process__container_title {
     font-size: 3.25rem;
     line-height: 3.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    width: 50%;
   }
 }

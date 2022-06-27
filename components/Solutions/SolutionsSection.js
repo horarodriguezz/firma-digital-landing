@@ -1,36 +1,41 @@
+import { useWindowSize } from "hooks/useWindowSize";
+
 import BackgroundImage from "components/BackgroundImage";
-import styles from "styles/Solutions/SolutionsSection.module.css";
 import Industry from "./Industry";
+import { Signature, Team, Academy } from "components/icons";
+import styles from "styles/Solutions/SolutionsSection.module.css";
 
 const SolutionsSection = () => {
+  const width = useWindowSize();
+
   return (
     <section className={styles.section}>
       <div className={styles.section__container}>
-        <h2 className={styles.section__container_title}>
-          Una solución para cada{" "}
-          <span className={styles.title__destacated}>Industria</span>
-        </h2>
         <div className={styles.section__container_industries}>
           <Industry
-            icon={"/assets/icons/person.png"}
-            text={"Recursos Humanos"}
-          />
-          <Industry icon={"/assets/icons/dollar.png"} text={"Bancos Seguros"} />
-          <Industry
-            icon={"/assets/icons/academy.png"}
-            text={"Sector público"}
+            Icon={Signature}
+            title={"Identidad digital"}
+            text={`Secuencia única de letras y números que vincula al firmante con un documento electrónico`}
           />
           <Industry
-            icon={"/assets/icons/charity.png"}
-            text={"Sistema de Salud"}
+            Icon={Team}
+            title={"Fácil verificación"}
+            text={
+              "Permite la fácil identificación del autor y verificar si ese documento fue alterado."
+            }
           />
           <Industry
-            icon={"/assets/icons/university.png"}
-            text={"Sistema educativo"}
+            Icon={Academy}
+            title={"Múltiples usos"}
+            text={
+              "A través de este servicio, podrásr ealizar todo tipo de trámites con entidades públicas y privadas."
+            }
           />
         </div>
       </div>
-      <BackgroundImage src={"/assets/backgrounds/bluebg.jpg"} fit={"cover"} />
+      {width >= 768 && (
+        <BackgroundImage src={"/assets/backgrounds/bluebg.jpg"} fit={"cover"} />
+      )}
     </section>
   );
 };

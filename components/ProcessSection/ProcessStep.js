@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from "styles/ProcessSection/ProcessStep.module.css";
 
-const ProcessStep = ({ icon, text }) => {
+const ProcessStep = ({ icon, text, className, id }) => {
   return (
-    <div className={styles.step}>
+    <div className={styles[className]} id={styles[id]}>
       <div className={styles.step__icon}>
         <Image
           src={icon}

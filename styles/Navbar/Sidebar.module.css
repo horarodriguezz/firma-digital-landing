@@ -39,8 +39,8 @@
   margin-bottom: 2rem;
   color: white;
   padding: 0.25rem 1rem;
-  background-color: #4a50fe;
-  border: 2px solid #4a50fe;
+  background-color: #253585;
+  border: 2px solid #253585;
   font-size: 1.25rem;
   height: fit-content;
   width: 120px;
@@ -53,9 +53,9 @@
 
 .nav__list_item--button:hover {
   background-color: inherit;
-  border: 2px solid #4a50fe;
+  border: 2px solid #253585;
   cursor: pointer;
-  color: #4a50fe;
+  color: #253585;
 }
 
 @media (min-width: 768px) {

@@ -1,11 +1,11 @@
-import styles from "styles/Services/ServicesSection.module.css";
+import styles from "styles/Certification/Certification.module.css";
 import CertificationLink from "./CertificationLink";
 import Content from "./Content";
 import Titles from "./Titles";
 
 const Certification = () => {
   return (
-    <section id='servicios' className={styles.certification}>
+    <section className={styles.certification}>
       <article className={styles.certification__container}>
         <Titles />
         <Content />
