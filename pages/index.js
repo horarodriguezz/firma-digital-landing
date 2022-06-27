@@ -17,19 +17,19 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Guarda y Custodia - Administración y guarda documental</title>
+        <title>Firma Digital - Firma de documentos electrónicos</title>
         <meta
           name='description'
-          content='Ahorra espacio físico en tus oficinas y asegura el buen cuidado de tus archivos en nuestras instalaciones dedicadas y preparadas para la gestión de documentos.'
+          content='Certificado digital que permite la firma de documentos electrónicos, con la misma validez jurídica que un documento en papel firmado de puño y letra.'
         />
         <link rel='canonical' href={process.env.NEXT_PUBLIC_HOSTNAME} />
         <meta
           property='og:title'
-          content='Guarda y Custodia - Administración y guarda documental'
+          content='Firma Digital - Firma de documentos electrónicos'
         />
         <meta
           property='og:description'
-          content='Ahorra espacio físico en tus oficinas y asegura el cuidado de tus archivos en nuestras instalaciones preparadas para la gestión de documentos.'
+          content='Certificado digital que permite la firma de documentos electrónicos, con la misma validez jurídica que un documento en papel firmado de puño y letra.'
         />
         <meta property='og:url' content={process.env.NEXT_PUBLIC_HOSTNAME} />
         <meta
@@ -39,11 +39,11 @@ export default function HomePage() {
         <meta property='twitter:card' content='photo' />
         <meta
           property='twitter:title'
-          content='Guarda y Custodia - Administración y guarda documental'
+          content='Firma Digital - Firma de documentos electrónicos'
         />
         <meta
           property='twitter:description'
-          content='Ahorra espacio físico en tus oficinas y asegura el buen cuidado de tus archivos en nuestras instalaciones dedicadas y preparadas para la gestión de documentos.'
+          content='Certificado digital que permite la firma de documentos electrónicos, con la misma validez jurídica que un documento en papel firmado de puño y letra.'
         />
         <meta
           property='twitter:url'

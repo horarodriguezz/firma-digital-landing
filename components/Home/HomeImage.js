@@ -9,7 +9,7 @@ const HomeImage = () => {
   return (
     <div className={styles.imagecontainer}>
       <Image
-        src='/assets/backgrounds/Imagen-01.png'
+        src='/assets/backgrounds/imagen-01.png'
         layout='fill'
         sizes={width < 1024 ? "100vw" : "50vw"}
         priority
