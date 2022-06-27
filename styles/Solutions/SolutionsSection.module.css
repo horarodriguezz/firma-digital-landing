@@ -24,12 +24,20 @@
 }
 
 @media (min-width: 768px) {
+  .section {
+    padding-bottom: 4rem;
+  }
+
   .section__container_industries {
     flex-direction: row;
   }
 }
 
 @media (min-width: 1280px) {
+  .section {
+    padding-bottom: 2rem;
+  }
+
   .section__container {
     height: 40vh;
   }
