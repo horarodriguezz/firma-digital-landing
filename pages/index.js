@@ -3,9 +3,7 @@ import Head from "next/head";
 import ProcessSection from "components/ProcessSection/ProcessSection";
 import HomeSection from "components/Home/HomeSection";
 import Navbar from "components/Navbar/Navbar";
-import ServicesSection from "components/Services/ServicesSection";
-import AboutUsSection from "components/AboutUs/AboutUsSection";
-import BenefitsSection from "components/AboutUs/BenefitsSection";
+import Certification from "components/Certification/Certification";
 import SolutionsSection from "components/Solutions/SolutionsSection";
 import BoxSection from "components/BoxSection/BoxSection";
 import FinalSection from "components/HowCanHelpYou/FinalSection";
@@ -59,10 +57,8 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HomeSection />
-        <ServicesSection />
+        <Certification />
         <ProcessSection />
-        <AboutUsSection />
-        <BenefitsSection />
         <SolutionsSection />
         <BoxSection />
         <FinalSection />

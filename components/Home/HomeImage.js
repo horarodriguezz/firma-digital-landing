@@ -13,8 +13,10 @@ const HomeImage = () => {
         layout='fill'
         sizes={width < 1024 ? "100vw" : "50vw"}
         priority
+        quality={100}
         alt=''
         objectFit='contain'
+        objectPosition='center'
       />
     </div>
   );

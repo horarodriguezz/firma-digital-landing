@@ -30,3 +30,13 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1536px) {
+  .homesection {
+    margin-top: 6rem;
+  }
+
+  .homesection__container {
+    min-height: calc(100vh - 6rem);
+  }
+}

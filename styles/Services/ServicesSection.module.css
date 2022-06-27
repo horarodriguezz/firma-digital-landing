@@ -1,130 +1,153 @@
-.services {
+.certification {
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.services__container {
+.certification__container {
   width: 85%;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.services__container_title {
+.titles__title {
   font-size: 1.75rem;
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-  line-height: 2rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  margin-bottom: 0.75rem;
   color: #2e4765;
 }
 
-.services__container_description {
+.titles__title--marked {
+  background-color: #2e4765;
+  width: fit-content;
+  margin-top: 0.15rem;
+  padding: 0 0.25rem;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+.content__paragraph {
   font-size: 0.85rem;
   font-weight: 300;
   color: #2e4765;
-  margin-bottom: 2rem;
+  margin-top: 1.25rem;
   line-height: 1.3rem;
 }
 
-.services__container_content {
-  display: flex;
-  width: 100%;
-  height: fit-content;
+.content__link {
+  color: #4a50fd;
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-top: 1.5rem;
 }
-
-.content__grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem 0;
-}
-
-.content__image {
+.titles__link {
+  color: #4a50fd;
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-top: 1.5rem;
   display: none;
 }
 
 @media (min-width: 768px) {
-  .services__container_title {
+  .titles__title {
     font-size: 2.25rem;
     line-height: 2.75rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
     text-align: center;
   }
 
-  .services__container_description {
-    margin-bottom: 2.5rem;
+  .titles__title--marked {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin: 0.25rem auto 0 auto;
+  }
+
+  .content__paragraph {
     font-size: 1.25rem;
     line-height: 2rem;
-    text-align: center;
+    margin-top: 2.5rem;
   }
 
-  .content__grid {
-    justify-items: center;
+  .content__link {
+    font-size: 1.15rem;
+    margin-top: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .services__container_title {
-    margin-bottom: 1rem;
-  }
-
-  .services__container_description {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    width: 48%;
-    margin: 0 auto 2rem auto;
-  }
-
-  .services__container_content {
-    margin-top: 2rem;
+  .certification__container {
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
 
-  .content__grid {
-    width: 50%;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3.5rem 2.5rem;
-    margin-top: 1.5rem;
+  .certification__container_titles {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .content__image {
+  .certification__container_content {
+    width: 60%;
+  }
+
+  .titles__title {
+    text-align: start;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .titles__title--marked {
+    margin: 0 0 0.25rem 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .content__link {
+    display: none;
+  }
+
+  .titles__link {
     display: block;
-    position: relative;
-    width: 50%;
-    right: -38px;
+    font-size: 1rem;
   }
 
-  .content__image img {
-    object-fit: contain;
-    object-position: center;
+  .content__paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
 @media (min-width: 1536px) {
-  .services {
-    min-height: calc(100vh - 6rem);
+  .certification {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
   }
 
-  .services__container_title {
+  .titles__title {
     font-size: 3.25rem;
     line-height: 3.5rem;
-    margin-bottom: 2.5rem;
   }
 
-  .services__container_description {
+  .titles__title--marked {
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+  }
+
+  .content__paragraph {
     font-size: 1.4rem;
     line-height: 2rem;
     margin-bottom: 2.5rem;
   }
 
-  .content__grid {
-    width: 50%;
-  }
-
-  .content__image {
-    width: 60%;
-    flex-shrink: 1;
-    object-fit: cover;
+  .titles__link {
+    font-size: 1.5rem;
   }
 }

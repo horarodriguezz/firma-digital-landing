@@ -24,8 +24,8 @@
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  background-color: #4a50fd;
-  border: 2px solid #4a50fd;
+  background-color: #253585;
+  border: 2px solid #253585;
   width: fit-content;
   transition: all 0.3s;
   font-family: "Poppins", sans-serif;
@@ -33,8 +33,8 @@
 
 .content__button:hover {
   background-color: inherit;
-  color: #4a50fd;
-  border: 2px solid #4a50fd;
+  color: #253585;
+  border: 2px solid #253585;
   cursor: pointer;
 }
 
