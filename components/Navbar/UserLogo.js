@@ -5,7 +5,9 @@ import styles from "styles/Navbar/UserLogo.module.css";
 const UserLogo = () => {
   return (
     <div className={styles.logocontainer}>
-      <FontAwesomeIcon icon={faUserCircle} />
+      <a href={process.env.NEXT_PUBLIC_LOGIN_URL}>
+        <FontAwesomeIcon icon={faUserCircle} />
+      </a>
     </div>
   );
 };
