@@ -57,13 +57,11 @@
   .titles__title {
     font-size: 2.25rem;
     line-height: 2.75rem;
-    text-align: center;
   }
 
   .titles__title--marked {
     font-size: 2.25rem;
     line-height: 2.75rem;
-    margin: 0.25rem auto 0 auto;
   }
 
   .content__paragraph {
@@ -131,14 +129,18 @@
     padding-bottom: 10rem;
   }
 
+  .certification__container_content {
+    padding-left: 2rem;
+  }
+
   .titles__title {
-    font-size: 3.25rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3.25rem;
   }
 
   .titles__title--marked {
-    font-size: 3.25rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3.25rem;
   }
 
   .content__paragraph {
