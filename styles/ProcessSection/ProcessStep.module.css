@@ -112,23 +112,23 @@
   }
 
   #step1 {
-    left: 37%;
+    left: 39%;
   }
 
   #step2 {
-    right: 37%;
+    right: 39%;
   }
 
   #step3 {
-    left: 37%;
+    left: 39%;
   }
 
   #step4 {
-    right: 37%;
+    right: 39%;
   }
 
   #step5 {
-    left: 37%;
+    left: 39%;
   }
 }
 
@@ -149,25 +149,5 @@
   .step__textcontainer_text {
     font-size: 1.45rem;
     line-height: 1.65rem;
-  }
-
-  #step1 {
-    left: 39%;
-  }
-
-  #step2 {
-    right: 39%;
-  }
-
-  #step3 {
-    left: 39%;
-  }
-
-  #step4 {
-    right: 39%;
-  }
-
-  #step5 {
-    left: 39%;
   }
 }
